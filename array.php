@@ -175,30 +175,30 @@
 // console.log(friends.sort(comparePerson));
 
 //字串排序
-// var names = ["Ana","ana","john","John","bb"];
-// // console.log(names.sort()); //怪怪的？因為sort是根據AscII比較的
+var names = ["Ana","ana","john","John","bb"];
+// console.log(names.sort()); //怪怪的？因為sort是根據AscII比較的
 
-// var charResult = names.sort(function(a,b){
-//     if (a.toLowerCase() < b.toLowerCase()){
-//         return -1;
-//     }
-//     if (a.toLowerCase() > b.toLowerCase()){
-//         return 1;
-//     }
-//     return 0;
-// })
-// console.log(charResult);
+var charResult = names.sort(function(a,b){
+    if (a.toLowerCase() < b.toLowerCase()){
+        return -1;
+    }
+    if (a.toLowerCase() > b.toLowerCase()){
+        return 1;
+    }
+    return 0;
+})
+console.log(charResult);
 //補充：有抑音符號字元可以用localCompare
 
 //搜尋 indexOf
 //輸出陣列為字串: toString, join
-var q=[1,2,3,4,5,6,7,8,9,10,11,12,13];
+// var q=[1,2,3,4,5,6,7,8,9,10,11,12,13];
 // console.log(q.indexOf(0)); //沒有0則傳回-1
 // console.log(q.indexOf(5)); //有5則傳回第四個位置
 
-console.log(q.toString());
-var qString = q.join("-");
-console.log(qString);
+// console.log(q.toString());
+// var qString = q.join("-");
+// console.log(qString);
 
 
 
